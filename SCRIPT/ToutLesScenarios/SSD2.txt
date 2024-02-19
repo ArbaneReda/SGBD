@@ -1,0 +1,10 @@
+RESETDB
+CREATE TABLE Etudiants (NumEtu:INT,MoyenneS5:FLOAT,MoyenneS6:FLOAT)
+INSERT INTO Etudiants VALUES (1,8.5,11.5)
+INSERT INTO Etudiants VALUES (2,15.0,10.0)
+INSERT INTO Etudiants VALUES (3,12.0,12.9)
+INSERT INTO Etudiants VALUES (4,13.0,16.3)
+INSERT INTO Etudiants VALUES (5,9.0,7.0)
+SELECT * FROM Etudiants WHERE Etudiants.MoyenneS5=15,0 AND Etudiants.MoyenneS6=10,0
+SELECT * FROM Etudiants WHERE Etudiants.MoyenneS5<=13,0 AND Etudiants.MoyenneS5>=8,0 AND Etudiants.MoyenneS6<=10,0
+
